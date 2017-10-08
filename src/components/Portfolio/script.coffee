@@ -7,7 +7,7 @@ Array::in_group_of = (size) ->
 
   arrays
 
-context = require.context './images/big'
+context = require.context './images/small'
 images = context.keys().map (key) -> context key
 image_groups = images.in_group_of 3
 
