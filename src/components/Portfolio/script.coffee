@@ -1,7 +1,7 @@
 Array::in_group_of = (size) ->
   [arrays, start] = [[], 0]
 
-  while (start+size) <= @length
+  while start <= @length
     arrays.push @[start...(start+size)]
     start += size
 
