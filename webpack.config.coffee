@@ -46,6 +46,6 @@ module.exports =
   plugins: [
     new html
       title: "Eugene Chernov | 3D Artist | Product Modeling and Visualization"
-      template: '!!pug-loader!src/template.pug'
+      template: '!!pug-loader!src/main.pug'
       hash: on
   ]
