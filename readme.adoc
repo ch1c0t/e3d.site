@@ -1,0 +1,7 @@
+To build:
+
+[source,bash]
+----
+npm i
+./node_modules/.bin/webpack
+----
