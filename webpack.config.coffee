@@ -24,10 +24,7 @@ load_coffee =
 
 load_images =
    test: /\.(png|jpg|gif)$/
-   use: [
-     'preload-image-loader'
-     'file-loader'
-   ]
+   use: 'file-loader'
 
 load_vue_components =
   test: /\.vue$/
