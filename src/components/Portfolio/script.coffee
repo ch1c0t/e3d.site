@@ -24,3 +24,8 @@ image_groups = images.in_group_of 3
 module.exports =
   data: ->
     image_groups: image_groups
+
+context = require.context './images', yes
+context.keys().forEach (key) ->
+  image = new Image
+  image.src = context key
