@@ -12,13 +12,10 @@
       br
       
       .icons
-        img(:src="icon01")
-        img(:src="icon02")
-        img(:src="icon03")
-        img(:src="icon04")
-
-      //ul
-        //li(v-for="icon in icons_groups")
+        ul.inline-list
+          li(v-for="icon in icons")
+            a(:href="icon.link")
+              img(:src="icon.image")
 
     .column.is-6
       figure.image.is-4by3
